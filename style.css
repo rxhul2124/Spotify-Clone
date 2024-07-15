@@ -1,0 +1,421 @@
+body{
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+}
+/* CSS for Sidebar menu */
+.sidebar{
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav{
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    border-radius: 1rem;
+    padding: 0.5rem 0.75rem;
+    margin: 0.5rem;
+}
+
+.nav-option{
+    line-height: 40px;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option:hover{
+    opacity: 1;
+}
+
+.nav-option i {
+    font-size: 1.1rem;
+}
+
+.icon{
+    line-height: 40px;
+    padding: 0.5rem 0.75rem 0 0.75rem;
+    font-weight: 600;
+}
+
+.icon i{
+    font-size: 1.4rem;
+}
+
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+/* Library section CSS */
+
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100vh;
+    margin: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-option img{
+    height: 1.1rem;
+    width: 1.1rem;
+}
+
+.icons{
+    display: flex;
+    margin-right: 1rem;
+}
+
+.icons i{
+    font-size: 1.25rem;
+    opacity: 0.7;
+    margin-left: 1rem;
+}
+
+.icons i:hover{
+    opacity: 1;
+}
+
+/* library box CSS  */
+
+.box{
+    background-color: #242424;
+    height: 8rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.25rem;
+    margin: 0.75rem 0 0.75rem 0;
+    transition: transform 0.4s ease;
+}
+
+.box:hover{
+    transform: scale(1.0125);
+}
+
+.box-1{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.box-2{
+    font-size: 0.75rem;
+    opacity: 0.75rem;
+    font-weight: 500;
+}
+
+.badge{
+    font-weight: 700;
+    border-radius: 2rem;
+    border: none;
+    background-color: white;
+    padding: 0.25rem  1rem;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+    transition:transform 0.1s ease;
+}
+
+.badge:hover{
+    transform: scale(1.05);
+}
+
+/* CSS for main-content */
+
+/* nav section */
+.album{
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    background-color: #121212;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    padding: 0rem 0.75rem 0.75rem 0.75rem;
+}
+
+.nav-album{
+    height: 60px;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 0.75rem;
+    position:sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+.navigation{
+    padding: 0.5rem;
+}
+
+.navigation button{
+    background-color: black;
+    border: none;
+    border-radius: 2rem;
+}
+.navigation i{
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    padding: 0.25rem;
+    color: white;
+}
+
+.button{
+    margin-right: 0.5rem;
+}
+.sign{
+    background-color: #121212;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    opacity: 0.7;
+    font-weight: 700;
+    margin-right: 0.5rem;
+    transition: opacity 0.3s ease;
+    transition: transform 0.1s ease;
+}
+
+.sign:hover{
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.sticky-button{
+    font-size: 1.rem;    
+    font-weight: 700;
+    border-radius: 2rem;
+    border: none;
+    background-color: white;
+    padding: 0.5rem  1rem;
+    margin-top: 0.5rem;
+    height: 2.5rem;
+    width: 6rem;
+    transition: transform 0.1s ease;
+}
+
+.sticky-button:hover{
+    transform: scale(1.05);
+}
+
+@media (max-width : 1000px){
+    .hide{
+        display: none;
+    }
+}
+
+/* cards part of album */
+
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    background: #121212;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem 0.5rem 0.85rem
+}
+
+h1{
+    margin-left: 1.35rem;
+}
+.card{
+    transition:background-color 0.3s ease;
+    transition: transform 0.4s ease;
+    width: 170px;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: #191919;
+    margin: 0.5rem;
+}
+
+.card:hover{
+    background-color: #242424;
+    transform: scale(1.025);
+}
+.img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card-title{
+    font-weight: 700;
+}
+
+.card-info{
+    opacity: 0.7;
+    font-size: 0.75rem;
+}
+
+/* main content footer */
+
+.footer{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    width: 90%;
+    height: 50%;
+    border-top: 2px solid white;
+    opacity: 0.4;
+}
+
+/* CSS for music-player */
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.music-album{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 25%;
+    margin-left: 1.5rem;
+}
+
+.song-photo img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0.35rem;
+
+}
+
+.song-info{
+    padding: 0.5rem;
+}
+
+.song{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.singer{
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
+
+.song-icon button{
+    background-color: #1cd363;
+    border: none;
+    border-radius: 1rem;
+    line-height: 1.25rem;
+}
+
+/* playback control */
+
+.player{
+    height: 100%;
+    width: 50%;
+    background-color: black;
+}
+.play{
+    transition: transform 0.2s ease;
+}
+.play:hover{
+    transform: scale(1.099);
+}
+
+.player-control{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.player-control i{
+    margin-left: 1.25rem;
+    font-size: 1.10rem;
+    opacity: 0.7;
+}
+
+.player-control i:hover{
+    opacity: 1;
+}
+
+.player-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.player-bar span{
+    font-size: 0.75rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    opacity: 0.7;
+}
+
+.progess-bar{
+    width: 70%;
+    background-color: transparent;
+    appearance: none;
+    cursor: pointer; 
+}
+
+.progess-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    height: 0.20rem;
+}
+
+.progess-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1cd363;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+/* control */
+
+.control{
+    background-color: black;
+    width: 25%;
+    display: flex;
+    justify-content: end;
+
+}
+
+.tools{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tools i{
+    margin-left: 1rem;
+    opacity: 0.7;
+}
+
+.tools i:hover{
+    opacity: 1;
+}
